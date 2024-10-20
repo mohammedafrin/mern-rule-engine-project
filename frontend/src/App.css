@@ -1,0 +1,114 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--label-color);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+}
+
+.btn {
+  background-color: var(--btn-bg-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg-color);
+}
+
+.theme-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: var(--switch-color);
+
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+/* Light Theme */
+.app.light {
+  --bg-color: #f4f4f9;
+  --text-color: #333;
+  --card-bg-color: white;
+  --btn-bg-color: #007bff;
+  --btn-hover-bg-color: #0056b3;
+  --heading-color: black;
+  --switch-color: black;
+  --primary-color: #007bff;
+  --label-color: black;
+  --input-bg-color: white;
+}
+
+/* Dark Theme */
+.app.dark {
+  --bg-color: #121212;
+  --text-color: #f4f4f9;
+  --card-bg-color: #1e1e1e;
+  --btn-bg-color: #6200ea;
+  --btn-hover-bg-color: #3700b3;
+  --heading-color:#f4f4f9;
+  --switch-color:#f4f4f9;
+  --primary-color: #bb86fc;
+  --label-color: white;
+  --input-bg-color: #2e2e2e;
+}
